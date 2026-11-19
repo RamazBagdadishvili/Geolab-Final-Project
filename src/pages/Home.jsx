@@ -145,6 +145,20 @@ function Home() {
   return (
     <section>
       <div className="text-center max-w-2xl mx-auto py-4 sm:py-6 mb-10">
+        <a
+          href="https://geolab.edu.ge"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 mb-5 rounded-full bg-card border border-border text-xs sm:text-sm text-muted hover:text-text hover:border-accent transition"
+        >
+          <img
+            src="/geolab-logo.png"
+            alt="GeoLab"
+            className="h-5 w-5 object-contain"
+          />
+          <span>GeoLab React Final Project</span>
+        </a>
+
         <h1 className="text-3xl sm:text-5xl mb-3">Find your next game</h1>
         <p className="text-muted mb-6">
           Browse popular games, explore details, and organize what you want to

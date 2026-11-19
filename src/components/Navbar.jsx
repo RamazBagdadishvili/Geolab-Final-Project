@@ -40,6 +40,7 @@ function Navbar() {
 
         <button
           type="button"
+          aria-label="Menu"
           onClick={() => setMenuOpen(!menuOpen)}
           className="min-[600px]:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-[10px] bg-btn border border-border text-text cursor-pointer"
         >
