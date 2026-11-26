@@ -35,7 +35,7 @@ const BLOCKED_WORDS =
   /\b(hentai|porn|nsfw|erotic|eroge|sex|sexy|xxx|nude|nudity|waifu|strip|milf|bdsm|boobs|tits|futa|ecchi|lewd|harem)\b/i;
 
 export function isSafeGame(game) {
-  if (!game) return false;
+  if (!game || !game.background_image) return false;
   if (game.esrb_rating?.slug === "adults-only") return false;
   if (BLOCKED_WORDS.test(game.name || "") || BLOCKED_WORDS.test(game.slug || "")) {
     return false;
